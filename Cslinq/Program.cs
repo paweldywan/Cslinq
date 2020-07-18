@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,6 +24,10 @@ namespace Cslinq
             WriteSeparator();
 
             TestFunc();
+
+            WriteSeparator();
+
+            TestIQueryable();
 
 
             Console.ReadLine();
@@ -64,6 +69,25 @@ namespace Cslinq
             Action<int> write = x => Console.WriteLine(x);
 
             write(square(add(1, 3)));
+        }
+
+        private static void TestIQueryable()
+        {
+            MovieDB db = new MovieDB();
+
+            IEnumerable<Movie> query =
+                db.Movies.Where(m => m.Title.StartsWith("Star"))
+                    .OrderBy(m => m.ReleaseDate.Year);
+
+            var query2 =
+                from m in db.Movies
+                where m.Title.StartsWith("L")
+                select m;
+
+            foreach (var movie in query2)
+            {
+                Console.WriteLine(movie.Title);
+            }
         }
     }
 
