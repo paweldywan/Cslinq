@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cslinq", "Cslinq\Cslinq.csproj", "{6AA68B82-2AED-46B5-9D17-B4F8A9BE6222}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AA68B82-2AED-46B5-9D17-B4F8A9BE6222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA68B82-2AED-46B5-9D17-B4F8A9BE6222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA68B82-2AED-46B5-9D17-B4F8A9BE6222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA68B82-2AED-46B5-9D17-B4F8A9BE6222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03742AE7-37A5-4C55-AAAE-B85EAC07E3D3}
+	EndGlobalSection
+EndGlobal
